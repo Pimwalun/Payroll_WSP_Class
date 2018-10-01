@@ -3,12 +3,12 @@ package payrollcasestudy.transactions.change;
 
 import payrollcasestudy.boundaries.PayrollDatabase;
 import payrollcasestudy.entities.Employee;
-import payrollcasestudy.transactions.Transaction;
+import payrollcasestudy.transactions.Transactions;
 
 /**
  * transaction which changes attributes of an employee
  */
-public abstract class ChangeEmployeeTransaction implements Transaction
+public abstract class ChangeEmployeeTransaction implements Transactions
 {
 
 	PayrollDatabase database = PayrollDatabase.globalPayrollDatabase;

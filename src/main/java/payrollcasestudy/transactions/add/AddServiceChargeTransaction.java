@@ -6,12 +6,12 @@ import java.util.Calendar;
 import payrollcasestudy.boundaries.PayrollDatabase;
 import payrollcasestudy.entities.Employee;
 import payrollcasestudy.entities.affiliation.UnionAffiliation;
-import payrollcasestudy.transactions.Transaction;
+import payrollcasestudy.transactions.Transactions;
 
 /**
  * transaction which adds a service charge deduction to employees from enrolled union affiliations
  */
-public class AddServiceChargeTransaction implements Transaction
+public class AddServiceChargeTransaction implements Transactions
 {
 
 	PayrollDatabase database = PayrollDatabase.globalPayrollDatabase;

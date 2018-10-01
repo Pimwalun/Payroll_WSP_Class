@@ -11,7 +11,7 @@ import payrollcasestudy.entities.PayCheck;
 
 import java.util.*;
 
-public class PaydayTransaction implements Transaction
+public class PaydayTransaction implements Transactions
 {
 
 	private Calendar payDate;

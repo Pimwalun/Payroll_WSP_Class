@@ -8,12 +8,13 @@ import payrollcasestudy.entities.Employee;
 import payrollcasestudy.entities.SalesReceipt;
 import payrollcasestudy.entities.paymentclassifications.CommissionedClassification;
 import payrollcasestudy.entities.paymentclassifications.PaymentClassification;
-import payrollcasestudy.transactions.Transaction;
+import payrollcasestudy.transactions.Transactions;
+import payrollcasestudy.transactions.Transactions;
 
 /**
  * transaction which adds a sales receipt to a commissioned employee
  */
-public class AddSalesReceiptTransaction implements Transaction
+public class AddSalesReceiptTransaction implements Transactions
 {
 
 	private Calendar date;

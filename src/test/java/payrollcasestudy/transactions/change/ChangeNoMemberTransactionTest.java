@@ -12,7 +12,7 @@ import payrollcasestudy.DatabaseResource;
 import payrollcasestudy.boundaries.PayrollDatabase;
 import payrollcasestudy.entities.Employee;
 import payrollcasestudy.entities.affiliation.UnionAffiliation;
-import payrollcasestudy.transactions.Transaction;
+import payrollcasestudy.transactions.Transactions;
 import payrollcasestudy.transactions.add.AddHourlyEmployeeTransaction;
 
 
@@ -29,7 +29,7 @@ public class ChangeNoMemberTransactionTest
 
 		int employeeId = 2;
 		int memberId = 7734;
-		Transaction addEmployeeTransaction = new AddHourlyEmployeeTransaction(
+		Transactions addEmployeeTransaction = new AddHourlyEmployeeTransaction(
 				employeeId, "Bill", "Home", 15.25 );
 		addEmployeeTransaction.execute( );
 
@@ -42,7 +42,7 @@ public class ChangeNoMemberTransactionTest
 		database.addUnionMember( memberId, employee );
 		assertThat( database.getUnionMember( memberId ), is( employee ) );
 
-		Transaction noMemberTransaction = new ChangeNoMemberTransaction(
+		Transactions noMemberTransaction = new ChangeNoMemberTransaction(
 				employeeId );
 		noMemberTransaction.execute( );
 

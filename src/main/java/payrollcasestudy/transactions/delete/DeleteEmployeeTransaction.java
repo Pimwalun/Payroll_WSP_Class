@@ -2,12 +2,12 @@
 package payrollcasestudy.transactions.delete;
 
 import payrollcasestudy.boundaries.PayrollDatabase;
-import payrollcasestudy.transactions.Transaction;
+import payrollcasestudy.transactions.Transactions;
 
 /**
  * transaction which delete an employee from the database
  */
-public class DeleteEmployeeTransaction implements Transaction
+public class DeleteEmployeeTransaction implements Transactions
 {
 
 	private int employeeId;

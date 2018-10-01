@@ -17,7 +17,7 @@ import payrollcasestudy.DatabaseResource;
 import payrollcasestudy.entities.Employee;
 import payrollcasestudy.entities.ServiceCharge;
 import payrollcasestudy.entities.affiliation.UnionAffiliation;
-import payrollcasestudy.transactions.Transaction;
+import payrollcasestudy.transactions.Transactions;
 
 /**
  * 
@@ -33,7 +33,7 @@ public class AddServiceChargeTransactionTest
 	public void testAddServiceCharge( )
 	{
 		int employeeId = 2;
-		Transaction addEmployeeTransaction = new AddHourlyEmployeeTransaction(
+		Transactions addEmployeeTransaction = new AddHourlyEmployeeTransaction(
 				employeeId, "Bill", "Home", 15.25 );
 		addEmployeeTransaction.execute( );
 

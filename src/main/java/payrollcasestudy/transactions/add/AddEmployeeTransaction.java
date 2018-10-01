@@ -6,12 +6,13 @@ import payrollcasestudy.entities.Employee;
 import payrollcasestudy.entities.paymentclassifications.PaymentClassification;
 import payrollcasestudy.entities.paymentmethods.PaymentMethod;
 import payrollcasestudy.entities.paymentschedule.PaymentSchedule;
-import payrollcasestudy.transactions.Transaction;
+import payrollcasestudy.transactions.Transactions;
+import payrollcasestudy.transactions.Transactions;
 
 /**
  * 
  */
-public abstract class AddEmployeeTransaction implements Transaction
+public abstract class AddEmployeeTransaction implements Transactions
 {
 
 	private int employeeId;

@@ -8,12 +8,12 @@ import payrollcasestudy.entities.Employee;
 import payrollcasestudy.entities.TimeCard;
 import payrollcasestudy.entities.paymentclassifications.HourlyClassification;
 import payrollcasestudy.entities.paymentclassifications.PaymentClassification;
-import payrollcasestudy.transactions.Transaction;
+import payrollcasestudy.transactions.Transactions;
 
 /**
  * transaction which adds a time card to an hourly paid employee
  */
-public class AddTimeCardTransaction implements Transaction
+public class AddTimeCardTransaction implements Transactions
 {
 
 	private Calendar date;

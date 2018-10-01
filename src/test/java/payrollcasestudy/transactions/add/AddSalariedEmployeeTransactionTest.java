@@ -15,7 +15,7 @@ import payrollcasestudy.entities.affiliation.UnionAffiliation;
 import payrollcasestudy.entities.paymentclassifications.PaymentClassification;
 import payrollcasestudy.entities.paymentclassifications.SalariedClassification;
 import payrollcasestudy.entities.paymentschedule.MonthlyPaymentSchedule;
-import payrollcasestudy.transactions.Transaction;
+import payrollcasestudy.transactions.Transactions;
 
 import static payrollcasestudy.TestConstants.*;
 
@@ -33,7 +33,7 @@ public class AddSalariedEmployeeTransactionTest
 	public void testAddSalariedEmployee( )
 	{
 		int employeeId = 1;
-		Transaction addEmployeeTransaction = new AddSalariedEmployeeTransaction(
+		Transactions addEmployeeTransaction = new AddSalariedEmployeeTransaction(
 				employeeId, "Bob", "Home", 1000.0 );
 		addEmployeeTransaction.execute( );
 
